@@ -1,9 +1,0 @@
-number,operador,prototipo,anteparo,altura,asa,hand,medidorigual,tempoparada,runs,commit
-1,'AJ','4 - diferentes - AJ',false,'indeterminada',free,clip,false,ouvido,'3 - no mean',alturas de lançamento aleatória não quantificada
-2,'AJ','4 - diferentes - AJ',false,1.5,free,clip,false,ouvido,'3 - no mean',alturas de lançamento medidas no momento do lançamento
-3,'AJ','4 - iguais - AJ',false,1.5,free,clip,false,ouvido,'5 - 3 mean',alturas de lançamento medidas no momento do lançamento
-4,'AJ','4 - iguais - AJ,true,1.5,caida,clip,false,ouvido,'5 - 3 mean',
-5,'AJ','4 - iguais - AJ,true,1.5,paralela,dedoinclinado,false,ouvido,'5 - 3 mean',
-6,'AJ','4 - iguais - AJ',false,1.5,caida,top,true,visual,'5 - no mean',
-7,'AJ','4 - iguais - AJ',false,2,caida,top,true,visual,'5 - no mean',
-8,'AJ','1 - amarelo - AJ',false,2,caida,top,true,visual,'5 - no mean',
