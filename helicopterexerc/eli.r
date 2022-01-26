@@ -30,3 +30,6 @@ ss.rr(var = flight.time, part = prototipo, appr = operador, data = elidf6)
 # SETIMO EXPERIMENTO
 elidf7 = read.csv("/home/mr-alden/reps/statistics/helicopterexerc/elidf7.csv")
 ss.rr(var = flight.time, part = prototipo, appr = operador, data = elidf7)
+# OITAVO EXPERIMENTO
+elidf8 = read.csv("/home/mr-alden/reps/statistics/helicopterexerc/elidf8.csv")
+ss.rr(var = flight.time, part = prototipo, appr = operador, data = elidf8)
