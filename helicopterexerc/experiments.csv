@@ -7,3 +7,5 @@ number,operador,prototipo,anteparo,altura,asa,hand,medidorigual,tempoparada,runs
 6,'AJ','4 - iguais - 4 4 4 4',false,1.5,caida,top,true,visual,'5 - no mean',
 7,'AJ','4 - iguais - 4 4 4 4',false,2,caida,top,true,visual,'5 - no mean',
 8,'AJ','1 - repetido - 4 4 4 4',false,2,caida,top,true,visual,'5 - no mean',
+9,'indeterminado','4 - diferentes - 1 2 3 4',false,2,caida,top,true,visual,'20 - no mean',
+10,'Seixas','1 - 3',false,2.13,caida,top,true,visual,'20 - no mean',
