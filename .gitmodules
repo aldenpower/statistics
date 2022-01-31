@@ -1,3 +1,0 @@
-[submodule "seaborn-data"]
-	path = seaborn-data
-	url = git@github.com:aldenpower/seaborn-data.git
