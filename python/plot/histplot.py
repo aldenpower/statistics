@@ -5,6 +5,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
+# Configure plot
+sns.set_theme(style = "whitegrid")
+
+sns.plotting_context()
+sns.set_context()
+
+sns.axes_style()
+sns.set_style
 
 penguins = sns.load_dataset("penguins")
 

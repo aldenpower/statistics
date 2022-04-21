@@ -4,6 +4,14 @@ import seaborn as sns
 
 sns.set_theme(style = "whitegrid")
 
+# Configure plot
+sns.plotting_context()
+sns.set_context()
+
+sns.axes_style()
+sns.set_style
+
+
 tips = sns.load_dataset("tips")
 dots = sns.load_dataset("dots")
 iris = sns.load_dataset("iris")
