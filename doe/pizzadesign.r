@@ -1,4 +1,7 @@
 library(SixSigma)
+library(ggplot2)
+library(nortest)
+
 pizzaDesign <- expand.grid(
     flour = gl(2, 1, labels = c("-", "+")),
     salt = gl(2, 1, labels = c("-", "+")),
@@ -40,6 +43,9 @@ doe.model3 <- lm(score
                  ~ flour + bakPow,
                 data = ss.data.doe1)
 
+
+doe.model3
+
 summary(doe.model3)
 
 coef(doe.model3)
@@ -47,3 +53,43 @@ coef(doe.model3)
 predict(doe.model3)
 
 confint(doe.model3)
+
+plot(c(-1, 1), ylim = range(ss.data.doe1$score),
+coef(doe.model1)[1] + c(-1, 1) * coef(doe.model1)[2],
+type="b", pch=16)
+
+abline(h=coef(doe.model1)[1])
+
+prinEf <- data.frame(Factor = rep(c("A_Flour",
+                                    "C_Baking Powder"), each = 2),
+                     Level = rep(c(-1, 1), 2),
+                     Score = c(aggregate(score ~ flour, FUN = mean, data =
+                                           ss.data.doe1)[,2],
+                               aggregate(score ~ bakPow, FUN = mean, data =
+                                           ss.data.doe1)[,2]))
+p <- ggplot(prinEf,
+              aes(x = Level, y = Score)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = c(-1, 1)) +
+  facet_grid(. ~ Factor) +
+  geom_abline(intercept = mean(ss.data.doe1$score),
+              slope = 0, linetype = "dashed")
+print(p)
+
+shapiro.test(residuals(doe.model2))
+lillie.test(residuals(doe.model2))
+
+lillie.test(rnorm(100, mean = 5, sd = 3))
+
+pizzaDesign8 <- expand.grid(flour = gl(2, 1, labels = c("-"
+                                                        , "+")),
+                            salt = gl(2, 1, labels = c("-", "+")),
+                            bakPow = gl(2, 1, labels = c("-", "+")),
+                            temp = gl(2, 1, labels = c("-", "+")),
+                            time = gl(2, 1, labels = c("-", "+")),
+                            score = NA)
+
+
+
+ss.data.doe2
