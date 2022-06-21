@@ -2,6 +2,7 @@ library(SixSigma)
 library(ggplot2)
 library(nortest)
 
+# Carregando dados
 csv <- read.csv('helicoptero_doe2.csv')
 
 tempos <- c(csv$tempo3, csv$tempo4)

@@ -1,0 +1,24 @@
+fixar um valor de eficiencia e stressar o sistema ao máximo
+fazer mais de trinta dados
+pegar o modelo mais critico
+
+
+2k fracionado
+
+- refazer o experimento
+
+montar o dataframe baseado nos preceitos da estatistica (remodelar o csv)
+
+fazer o planejamento (altura, quem vai lançar, local de lançamento, longe da porta)
+mais de trinta lançamento
+
+fazer lançamento de formas similares com o de juliana
+
+---
+
+planejamento do experimento, 2k fracionado , nao abir porta, altura fixa, procedimento semelhante das equipes
+usar o aggregate
+
+fazer 8 lançamentos
+
+ESCREVER PLANEJAMENTO DO LANÇAMENTO
